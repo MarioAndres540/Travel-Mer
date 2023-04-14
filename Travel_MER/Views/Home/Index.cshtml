@@ -3,6 +3,38 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Bienvenido a The Libary Travel</h1>
+    <br />
+    <p>A continuacion podra ingresar la informacion y mucho mas de: Autores, Libros y Editoriales en la parete superior izquierda.</p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-5 mt-4 ">
+    <div class="mb-5">
+        <form asp-controller="Autor" asp-action="Index">
+            <h4>Buscar por Autor</h4>
+            <p>
+                Search : <input type="text" name="buscar" class="form-text" placeholder="Name" />
+                <input type="submit" value="Search" class="btn btn-sm btn-dark" />
+            </p>
+        </form>
+    </div>
+    <div>
+        <form asp-controller="Editorial" asp-action="Index">
+            <h4>Buscar por Editoria</h4>
+            <p>
+                Search : <input type="text" name="buscar" class="form-text" placeholder="Name" />
+                <input type="submit" value="Search" class="btn btn-sm btn-dark" />
+            </p>
+        </form>
+    </div>
+    <div>
+        <form asp-controller="Libro" asp-action="Index">
+            <h4>Buscar por Libro</h4>
+            <p>
+                Search : <input type="text" name="buscar" class="form-text" placeholder="Title" />
+                <input type="submit" value="Search" class="btn btn-sm btn-dark" />
+            </p>
+        </form>
+    </div>
+
 </div>
